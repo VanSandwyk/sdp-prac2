@@ -14,4 +14,18 @@ public class SimpleFunctions {
     }
     return total; // Return the total sum
     }
+
+    //Task 5
+    Object obj = // your object to check
+    boolean  lstCond = false ;
+    if (obj instanceof List) {
+        
+    List<?> list = (List<?>) obj;
+    if (!list.isEmpty() && list.get(0) instanceof Integer) {
+        System.out.println("The object is an Integer List");
+        cond = true ;
+    }
+
+    return cond ;
+
 }
