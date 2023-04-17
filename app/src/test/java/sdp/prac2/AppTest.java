@@ -46,6 +46,7 @@ class AppTest {
         assertArrayEquals(expectedOutput, actualOutput);
     }
     
+}
     @Test
     public void testTask2_allLongInput() {
         // Arrange: create input with only long strings and expected output
@@ -58,4 +59,15 @@ class AppTest {
         // Assert: check that the actual output matches the expected output
         assertArrayEquals(expectedOutput, actualOutput);
     } */
-}
+    
+    @Test
+    public void testTask1() {
+        // Arrange: create input and expected output
+        List<Integer> a = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> b = Arrays.asList(0, 1, 2, 5); // note: 5 is out-of-range
+        int expected = 1 + 2 + 3;  //SUM OF INDEXES 0 1 2
+        // Act: call the Task1 method and get the actual output
+        int actual = Task1(a, b);
+        // Assert: check that the actual output matches the expected output
+       assertEquals(expected ,actual)
+    } */
