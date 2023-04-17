@@ -17,7 +17,6 @@ public class SimpleFunctions {
 
     //Task 5
     
-
    public static boolean task5(Object a) {
     if (a instanceof List) {
         List<?> list = (List<?>) a;
