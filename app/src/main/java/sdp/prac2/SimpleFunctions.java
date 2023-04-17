@@ -28,5 +28,16 @@ public class SimpleFunctions {
     }
     return output; // Return the multiple of the first element of a by the last of b
     }//Task4
-
+    
+    public static List<Integer> Task6(List<Integer> a) { 
+        List<Integer> output = new ArrayList<Integer>();
+        for (Integer num : a)  //loop around each number in the list
+           if(num % 100 == 0){ //check if it is a multiple of 100
+             output.add(num)
+           }else {
+            int rouded =((num /100) + 1) * 100  //if not multiple of 100 round up to next highest multiple of 100
+            output.add(rouded)
+           }
+        return output
+    } //task 6
 }
