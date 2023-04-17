@@ -7,7 +7,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+<<<<<<< HEAD
      /*    @Test
+=======
+    /*    @Test
+>>>>>>> d5d288d18ef6899a2a0aaddefee96cc5ffcc38b9
     public void testTask2() {
         // Arrange: create input and expected output
         String[] input = {"apple", "banana", "car", "", "dog"};
