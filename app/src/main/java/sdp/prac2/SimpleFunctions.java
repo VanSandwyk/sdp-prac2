@@ -7,14 +7,14 @@ public class SimpleFunctions {
     public SimpleFunctions() {}
     //Author: Jacobus van Sandwyk
     //Begin
-    public static int Task1(int[] a, int[] b) {
-    int total = 0; // Initialize accumulator
-    for (int index : b) { // Loop through each index in the array b
-        if (index >= 0 && index < a.length) { // Check if the index is within range of the array a
-            total += a[index]; // Add the corresponding element from a to the total
+    public static int Task1(List<Integer> a, List<Integer> b) {
+        int total = 0; // Initialize accumulator
+        for (int index : b) { // Loop through each index in the List b
+            if (index >= 0 && index < a.size()) { // Check if the index is within range of the List a
+                total += a.get(index); // Add the corresponding element from a to the total
+            }
         }
-    }
-    return total; // Return the total sum
+        return total; // Return the total sum
     }
     //End
 
