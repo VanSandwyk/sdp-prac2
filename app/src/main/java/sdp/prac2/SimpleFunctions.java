@@ -27,5 +27,36 @@ public class SimpleFunctions {
     return false;
 }
 
+////////// Tests for task 6///////////////////////////////////////////////////////////////////////////
+
+public void task6Test1() {
+    // Arrange
+    List<Integer> inLst = Arrays.asList(100, 201, 310, 400, 590);
+    List<Integer> expectedOutLst = Arrays.asList(100, 300, 400, 400, 600);
+
+    // Act
+    List<Integer> outputList = task6FunctionName(inLst);
+
+    // Assert
+    assertEquals(expectedOutLst, outputList);
+}
+
+public void task6Test2() {
+    // Arrange
+    List<Integer> inLst = Arrays.asList(100, 201, 310, 400, 590);
+    List<Integer> expectedOutLst = Arrays.asList(100, 300, 400, 400, 600);
+
+    // Act
+    List<Integer> outputList = task6FunctionName(inLst);
+
+    // Assert
+    if (!expectedOutLst.equals(outputList)) {
+         System.out.println("Error");
+    }
+}
+
+
+
+
 
 }
