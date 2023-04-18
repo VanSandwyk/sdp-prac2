@@ -3,6 +3,7 @@
  */
 package sdp.prac2;
 
+import java.util.* ;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,11 +13,12 @@ class AppTest {
     //Begin
     public void testTask2() {
         // Arrange: create input and expected output
+        SimpleFunctions SimpleFunctions = new SimpleFunctions();
         String[] input = {"apple", "banana", "car", "", "dog"};
         String[] expectedOutput = {"pple", "anana", "ar", "og"};
 
         // Act: call the Task2 method and get the actual output
-        String[] actualOutput = Task2(input);
+        String[] actualOutput = SimpleFunctions.Task2(input);
 
         // Assert: check that the actual output matches the expected output
         assertArrayEquals(expectedOutput, actualOutput);
@@ -25,11 +27,12 @@ class AppTest {
     @Test
     public void testTask2_emptyInput() {
         // Arrange: create empty input and expected output
+        SimpleFunctions SimpleFunctions = new SimpleFunctions();
         String[] input = {};
         String[] expectedOutput = {};
 
         // Act: call the Task2 method and get the actual output
-        String[] actualOutput = Task2(input);
+        String[] actualOutput = SimpleFunctions.Task2(input);
 
         // Assert: check that the actual output matches the expected output
         assertArrayEquals(expectedOutput, actualOutput);
@@ -38,11 +41,12 @@ class AppTest {
     @Test
     public void testTask2_allShortInput() {
         // Arrange: create input with only short strings and expected output
+        SimpleFunctions SimpleFunctions = new SimpleFunctions();
         String[] input = {"a", "b", "c"};
         String[] expectedOutput = {};
 
         // Act: call the Task2 method and get the actual output
-        String[] actualOutput = Task2(input);
+        String[] actualOutput = SimpleFunctions.Task2(input);
 
         // Assert: check that the actual output matches the expected output
         assertArrayEquals(expectedOutput, actualOutput);
@@ -52,11 +56,12 @@ class AppTest {
     @Test
     public void testTask2_allLongInput() {
         // Arrange: create input with only long strings and expected output
+        SimpleFunctions SimpleFunctions = new SimpleFunctions();
         String[] input = {"apple", "banana", "carrot"};
         String[] expectedOutput = {"pple", "anana", "arrot"};
 
         // Act: call the Task2 method and get the actual output
-        String[] actualOutput = Task2(input);
+        String[] actualOutput = SimpleFunctions.Task2(input);
 
         // Assert: check that the actual output matches the expected output
         assertArrayEquals(expectedOutput, actualOutput);
@@ -101,16 +106,17 @@ class AppTest {
             // Assert: check that the actual output matches the expected output
             assertArrayEquals(expectedOutput, actualOutput);
         }
-
+    */
     @Test
     public void testTask1() {
         // Arrange: create input and expected output
+        SimpleFunctions SimpleFunctions = new SimpleFunctions();
         List<Integer> a = Arrays.asList(1, 2, 3, 4, 5);
         List<Integer> b = Arrays.asList(0, 1, 2, 5); // note: 5 is out-of-range
         int expected = 1 + 2 + 3;  //SUM OF INDEXES 0 1 2
         // Act: call the Task1 method and get the actual output
-        int actual = Task1(a, b);
+        int actual = SimpleFunctions.Task1(a, b);
         // Assert: check that the actual output matches the expected output
-       assertEquals(expected ,actual)
-       */
-    } 
+        assertEquals(expected, actual);
+    }
+}
