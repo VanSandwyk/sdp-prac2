@@ -5,7 +5,8 @@ import java.util.*;
 
 public class SimpleFunctions {
     public SimpleFunctions() {}
-
+    //Author: Jacobus van Sandwyk
+    //Begin
     public static int Task1(int[] a, int[] b) {
     int total = 0; // Initialize accumulator
     for (int index : b) { // Loop through each index in the array b
@@ -15,6 +16,7 @@ public class SimpleFunctions {
     }
     return total; // Return the total sum
     }
+    //End
 
     // Author: JuneGemini13
     // StudentId: G21F7853
@@ -58,11 +60,11 @@ public class SimpleFunctions {
         List<Integer> output = new ArrayList<Integer>();
         for (Integer num : a)  //loop around each number in the list
            if(num % 100 == 0){ //check if it is a multiple of 100
-             output.add(num)
+             output.add(num);
            }else {
-            int rouded =((num /100) + 1) * 100  //if not multiple of 100 round up to next highest multiple of 100
-            output.add(rouded)
+            int rouded =((num /100) + 1) * 100 ; //if not multiple of 100 round up to next highest multiple of 100
+            output.add(rouded);
            }
-        return output
+        return output;
     } //task 6
 }

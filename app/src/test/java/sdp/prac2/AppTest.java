@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     /*    @Test
+    //Author: Jacobus van Sandwyk
+    //Begin
     public void testTask2() {
         // Arrange: create input and expected output
         String[] input = {"apple", "banana", "car", "", "dog"};
@@ -59,6 +61,7 @@ class AppTest {
         // Assert: check that the actual output matches the expected output
         assertArrayEquals(expectedOutput, actualOutput);
     }
+    //End
     
     @Test
     public void testTask3() {
@@ -109,4 +112,5 @@ class AppTest {
         int actual = Task1(a, b);
         // Assert: check that the actual output matches the expected output
        assertEquals(expected ,actual)
-    } */
+       */
+    } 
