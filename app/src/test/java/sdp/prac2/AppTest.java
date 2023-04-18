@@ -58,8 +58,47 @@ class AppTest {
 
         // Assert: check that the actual output matches the expected output
         assertArrayEquals(expectedOutput, actualOutput);
-    } */
+    }
     
+    @Test
+    public void testTask3() {
+        // Arrange: create input and expected output
+        String input = "()";
+        String expectedOutput = true;
+
+        // Act: call the Task2 method and get the actual output
+        String actualOutput = Task3(input);
+
+        // Assert: check that the actual output matches the expected output
+        assertArrayEquals(expectedOutput, actualOutput);
+    }
+
+    @Test
+        public void testTask3_multiple() {
+            // Arrange: create input and expected output
+            String input = "(((())))";
+            String expectedOutput = true;
+
+            // Act: call the Task2 method and get the actual output
+            String actualOutput = Task3(input);
+
+            // Assert: check that the actual output matches the expected output
+            assertArrayEquals(expectedOutput, actualOutput);
+        }
+
+    @Test
+        public void testTask3() {
+            // Arrange: create input and expected output
+            String input = "(()";
+            String expectedOutput = false;
+
+            // Act: call the Task2 method and get the actual output
+            String actualOutput = Task3(input);
+
+            // Assert: check that the actual output matches the expected output
+            assertArrayEquals(expectedOutput, actualOutput);
+        }
+
     @Test
     public void testTask1() {
         // Arrange: create input and expected output
