@@ -8,4 +8,112 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+
+     /*    @Test
+    public void testTask2() {
+        // Arrange: create input and expected output
+        String[] input = {"apple", "banana", "car", "", "dog"};
+        String[] expectedOutput = {"pple", "anana", "ar", "og"};
+
+        // Act: call the Task2 method and get the actual output
+        String[] actualOutput = Task2(input);
+
+        // Assert: check that the actual output matches the expected output
+        assertArrayEquals(expectedOutput, actualOutput);
+    }
+    
+    @Test
+    public void testTask2_emptyInput() {
+        // Arrange: create empty input and expected output
+        String[] input = {};
+        String[] expectedOutput = {};
+
+        // Act: call the Task2 method and get the actual output
+        String[] actualOutput = Task2(input);
+
+        // Assert: check that the actual output matches the expected output
+        assertArrayEquals(expectedOutput, actualOutput);
+    }
+    
+    @Test
+    public void testTask2_allShortInput() {
+        // Arrange: create input with only short strings and expected output
+        String[] input = {"a", "b", "c"};
+        String[] expectedOutput = {};
+
+        // Act: call the Task2 method and get the actual output
+        String[] actualOutput = Task2(input);
+
+        // Assert: check that the actual output matches the expected output
+        assertArrayEquals(expectedOutput, actualOutput);
+    }
+    
+    @Test
+    public void testTask2_allLongInput() {
+        // Arrange: create input with only long strings and expected output
+        String[] input = {"apple", "banana", "carrot"};
+        String[] expectedOutput = {"pple", "anana", "arrot"};
+
+        // Act: call the Task2 method and get the actual output
+        String[] actualOutput = Task2(input);
+
+        // Assert: check that the actual output matches the expected output
+        assertArrayEquals(expectedOutput, actualOutput);
+    } */
+    /*@Test
+    public void testTask5_testIsListSorted() {
+        // Test an empty list
+        List<Integer> emptyList = new ArrayList<>();
+        assertTrue(isListSorted(emptyList));
+
+        // Test a list with one element
+        List<Integer> singleItemList = Arrays.asList(1);
+        assertTrue(isListSorted(singleItemList));
+
+        // Test a list with two elements that are sorted
+        List<Integer> twoSortedItemsList = Arrays.asList(1, 2);
+        assertTrue(isListSorted(twoSortedItemsList));
+
+        // Test a list with two elements that are unsorted
+        List<Integer> twoUnsortedItemsList = Arrays.asList(2, 1);
+        assertFalse(isListSorted(twoUnsortedItemsList));
+
+        // Test a list with multiple elements that are sorted
+        List<Integer> multipleSortedItemsList = Arrays.asList(1, 2, 3, 4, 5);
+        assertTrue(isListSorted(multipleSortedItemsList));
+
+        // Test a list with multiple elements that are unsorted
+        List<Integer> multipleUnsortedItemsList = Arrays.asList(1, 3, 2, 4, 5);
+        assertFalse(isListSorted(multipleUnsortedItemsList));
+    }
+    @Test
+    public void testTask5_testIsListSorted() {
+        // Test an empty list
+        List<Integer> emptyList = new ArrayList<>();
+        assertTrue(isListSorted(emptyList));
+
+        // Test a list with one element
+        List<Integer> singleItemList = Arrays.asList(1);
+        assertTrue(isListSorted(singleItemList));
+
+        // Test a list with two elements that are sorted
+        List<Integer> twoSortedItemsList = Arrays.asList(1, 2);
+        assertTrue(isListSorted(twoSortedItemsList));
+
+        // Test a list with two elements that are unsorted
+        List<Integer> twoUnsortedItemsList = Arrays.asList(2, 1);
+        assertFalse(isListSorted(twoUnsortedItemsList));
+
+        // Test a list with multiple elements that are sorted in descending order
+        List<Integer> descendingList = Arrays.asList(5, 4, 3, 2, 1);
+        assertFalse(isListSorted(descendingList));
+
+        // Test a list with multiple elements that are sorted in ascending order, with duplicates
+        List<Integer> ascendingListWithDuplicates = Arrays.asList(1, 2, 2, 3, 4);
+        assertTrue(isListSorted(ascendingListWithDuplicates));
+
+        // Test a list with multiple elements that are sorted in descending order, with duplicates
+        List<Integer> descendingListWithDuplicates = Arrays.asList(5, 5, 4, 3, 3, 2, 1);
+        assertFalse(isListSorted(descendingListWithDuplicates));
+    }*/
 }
