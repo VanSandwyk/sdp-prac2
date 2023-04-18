@@ -112,11 +112,30 @@ class AppTest {
         // Arrange: create input and expected output
         SimpleFunctions SimpleFunctions = new SimpleFunctions();
         List<Integer> a = Arrays.asList(1, 2, 3, 4, 5);
-        List<Integer> b = Arrays.asList(0, 1, 2, 5); // note: 5 is out-of-range
+        List<Integer> b = Arrays.asList(0, 1, 2, 5); // 5 is out-of-range
         int expected = 1 + 2 + 3;  //SUM OF INDEXES 0 1 2
         // Act: call the Task1 method and get the actual output
         int actual = SimpleFunctions.Task1(a, b);
         // Assert: check that the actual output matches the expected output
+<<<<<<< HEAD
         assertEquals(expected, actual);
     }
 }
+=======
+       assertEquals(expected ,actual)
+    } 
+    @Test
+    public void test2Task1() {
+        // Arrange: create input and expected output
+        List<Integer> a = Arrays.asList(10, 20, 30, 40, 50);
+        List<Integer> b = Arrays.asList(0, 2, 4, 6); //  6 is out-of-range
+        int expectedSum = 10 + 30 + 50; // sum of elements at indiXES 0 2 4
+        
+        // Act: call the Task1 method and get the actual output
+        int actualSum = Task1(a, b);
+        // Assert: check that the actual output matches the expected output
+       assertEquals(expectedSum ,actualSum)
+
+    }
+}  
+>>>>>>> 7fd0863c73409a6a44f1db3b12b8c6500e9591d3
